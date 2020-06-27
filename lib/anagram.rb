@@ -18,7 +18,7 @@ class Anagram
       end
       
     end
-    
+    word_array
 end
 
 end
