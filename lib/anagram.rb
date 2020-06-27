@@ -1,6 +1,7 @@
 class Anagram
   
   @empty_array = []
+  @word_array = []
   
   attr_accessor :word
   
@@ -13,11 +14,11 @@ class Anagram
       split_word = array_word.split("")
       split_anagram = @word.split("")
       if split_word.sort == split_anagram.sort
-        return array_word
-      elsif array.last == array_word && split_word.sort != split_anagram.sort
-        return @empty_array
+        @word_array << array_word
       end
+      
     end
+    @word_array
 end
 
 end
